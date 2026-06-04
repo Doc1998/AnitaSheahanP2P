@@ -1,41 +1,127 @@
 <!-- ============================================================
-     FOOTER
+     FOOTER — Path to Peace
+     Drop into base layout. Colours matched to screenshot.
      ============================================================ -->
+<style>
+  .footer {
+    background: #1e1610;
+    color: rgba(253,250,246,.55);
+    padding: 56px 0 32px;
+  }
+  .footer__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+    margin-bottom: 28px;
+  }
+  .footer__brand-name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(253,250,246,.92);
+    margin-bottom: 12px;
+    display: block;
+  }
+  .footer__brand-name em {
+    color: rgba(253,250,246,.92);
+    font-style: italic;
+  }
+  .footer__tagline {
+    font-size: .85rem;
+    margin-bottom: 20px;
+    line-height: 1.75;
+    color: rgba(253,250,246,.45);
+  }
+  .footer__contact a {
+    color: rgba(253,250,246,.55);
+    font-size: .88rem;
+    display: block;
+    margin-bottom: 6px;
+    transition: color .15s;
+  }
+  .footer__contact a:hover { color: rgba(253,250,246,.90); }
+  .footer__heading {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: .72rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgba(253,250,246,.30);
+    margin-bottom: 16px;
+  }
+  .footer__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer__links a {
+    font-size: .86rem;
+    color: rgba(253,250,246,.45);
+    transition: color .15s;
+  }
+  .footer__links a:hover { color: rgba(253,250,246,.85); }
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: .78rem;
+    color: rgba(253,250,246,.28);
+  }
+  .footer__bottom a {
+    color: rgba(253,250,246,.45);
+    transition: color .15s;
+  }
+  .footer__bottom a:hover { color: rgba(253,250,246,.80); }
+  .footer__bottom strong {
+    font-weight: 500;
+    color: rgba(253,250,246,.50);
+  }
+
+  @media (max-width: 720px) {
+    .footer__grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer__bottom { flex-direction: column; text-align: center; }
+  }
+</style>
+
 <footer class="footer" aria-label="Site footer">
   <div class="wrap">
     <div class="footer__grid">
       <div>
         <span class="footer__brand-name">Path to <em>Peace</em></span>
-        <p class="footer__tagline" style="color: aquamarine;">Professional online counselling & psychotherapy with Anita Sheehan. Compassionate, confidential support for individuals across Ireland.</p>
+        <p class="footer__tagline">Professional online counselling & psychotherapy with Anita Sheehan.<br>Compassionate, confidential support for individuals across Ireland.</p>
         <div class="footer__contact">
           <a href="tel:+353874885445">📞 087 488 5445</a>
-          <a href="mailto:[EMAIL]">✉ [your email here]</a>
+          <a href="mailto:[your email here]">✉ [your email here]</a>
         </div>
       </div>
       <div>
         <p class="footer__heading">Services</p>
         <ul class="footer__links">
-          <li style="color: aquamarine;"><a href="/services/anxiety/">Anxiety</a></li>
-          <li style="color: aquamarine;"><a href="/services/depression/">Depression</a></li>
-          <li style="color: aquamarine;"><a href="/services/chronic-health/">Chronic Health Conditions</a></li>
-          <li style="color: aquamarine;"><a href="/services/personal-development/">Personal Development</a></li>
-          <li style="color: aquamarine;"><a href="/online-therapy/">Online Therapy Ireland</a></li>
+          <li><a href="/services/anxiety/">Anxiety</a></li>
+          <li><a href="/services/depression/">Depression</a></li>
+          <li><a href="/services/chronic-health/">Chronic Health Conditions</a></li>
+          <li><a href="/services/personal-development/">Personal Development</a></li>
+          <li><a href="/online-therapy/">Online Therapy Ireland</a></li>
         </ul>
       </div>
       <div>
         <p class="footer__heading">Information</p>
         <ul class="footer__links">
-          <li style="color: aquamarine;"><a href="/about/">About Anita</a></li>
-          <li style="color: aquamarine;"><a href="/faq/">FAQs</a></li>
-          <li style="color: aquamarine;"><a href="/fees/">Fees & Insurance</a></li>
-          <li style="color: aquamarine;"><a href="/contact/">Contact</a></li>
-          <li style="color: aquamarine;"><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/about/">About Anita</a></li>
+          <li><a href="/faq/">FAQs</a></li>
+          <li><a href="/fees/">Fees & Insurance</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <p style="color: aquamarine;">© 2025 Path to Peace Counselling & Psychotherapy. All rights reserved.</p>
-      <p style="color: aquamarine;">IACP Accredited · <a style="color: aquamarine;" href="/privacy-policy/">Privacy Policy</a> · <a style="color: aquamarine;"href="/cookie-policy/">Cookies</a></p>
+      <p>© 2025 Path to Peace Counselling & Psychotherapy. All rights reserved.</p>
+      <p>IACP Accredited · <strong><a href="/privacy-policy/">Privacy Policy</a></strong> · <strong><a href="/cookie-policy/">Cookies</a></strong></p>
     </div>
   </div>
 </footer>
